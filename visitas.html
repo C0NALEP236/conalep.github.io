@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Estadísticas de Visitas</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background-color: #D0F0C0;"> <!-- Fondo verde pastel -->
+
+<canvas id="visitasChart" width="400" height="400"></canvas>
+
+<script>
+// Suponiendo que tienes un array de datos de visitas
+var datosDeVisitas = [12, 19, 3, 5, 2, 3]; // Deberías reemplazar esto con tus datos reales
+
+var ctx = document.getElementById('visitasChart').getContext('2d');
+var visitasChart = new Chart(ctx, {
+    type: 'line', // Tipo de gráfica, puede ser 'line', 'bar', 'radar', etc.
+    data: {
+        labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'], // Etiquetas del eje X
+        datasets: [{
+            label: 'Visitas por Mes',
+            data: datosDeVisitas, // Tus datos aquí
+            backgroundColor: 'rgba(144, 238, 144, 0.2)', // Color de fondo verde pastel
+            borderColor: 'rgba(144, 238, 144, 1)', // Color del borde verde pastel
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+</body>
+</html>

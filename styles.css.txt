@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2e6; /* Verde pastel */
+    color: #333; /* Color de texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #4caf50; /* Verde pastel más oscuro */
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilos para la sección de valores */
+.valores-section {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra ligera */
+}
+
+.valores-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.valores-section p {
+    line-height: 1.6;
+}
+
+/* Estilos para los valores */
+.valores-section .valores {
+    margin-top: 20px;
+}
+
+.valores-section .valores h2 {
+    color: #4caf50; /* Verde pastel más oscuro */
+}
+
+.valores-section .valores ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.valores-section .valores li {
+    margin-bottom: 10px;
+}

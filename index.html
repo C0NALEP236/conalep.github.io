@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7f4; /* Verde pastel */
+            color: #333; /* Color de texto principal */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Evitar scroll horizontal */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Mínimo alto del viewport */
+        }
+
+        /* Estilos para el menú */
+        header {
+            background-color: #4caf50; /* Verde pastel más oscuro */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #4caf50; /* Cambia el color al verde pastel cuando se hace hover */
+        }
+
+        /* Estilos para el imagen de fondo */
+        .imagen-fondo {
+            background-image: url('ruta/a/tu/imagen.jpg'); /* Reemplaza con la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            flex: 1; /* Ocupa todo el espacio restante */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 0; /* Colocar detrás de los elementos del contenido */
+            color: white; /* Color de texto blanco para contrastar */
+            text-align: center; /* Alineación centrada del texto */
+        }
+
+        .contenido {
+            z-index: 1; /* Asegura que esté encima del fondo */
+            text-align: center; /* Alineación centrada del texto */
+            color: black; /* Cambia el color del texto a negro */
+        }
+
+        /* Estilos para la imagen extendida de la empresa */
+        .imagen-empresa {
+            position: fixed; /* Fija la posición */
+            bottom: 20px; /* Distancia desde abajo */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%); /* Centra horizontalmente */
+            max-width: 300px; /* Ancho máximo */
+            z-index: 2; /* Coloca encima del contenido */
+            border: 2px solid #333; /* Borde de color gris oscuro */
+            background-color: white; /* Fondo blanco */
+            padding: 10px; /* Espaciado interno */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .imagen-empresa img {
+            max-width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            display: block; /* Asegura que la imagen no tenga espacios adicionales */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="PROYECTO/mision_vision.html">Misión y Visión</a></li>
+                <li><a href="PROYECTO/derechos_autor.html">Derechos del Autor</a></li>
+                <li><a href="PROYECTO/valores_cona.html">Valores CONALEP</a></li>
+                <li><a href="PROYECTO/360.html">Fotos 360 Plantel</a></li>
+                <li><a href="PROYECTO/quienes_somos.html">Quiénes Somos</a></li>
+                <li><a href="PROYECTO/topologia.html">Topología</a></li>
+                <li><a href="PROYECTO/donde_nos_ubicamos.html">Dónde nos ubicamos</a></li>
+                <li><a href="PROYECTO/visitas.html">Visitas en mi sitio web</a></li>
+                <li><a href="PROYECTO/cultura.html">Cultura CONALEP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de imagen de fondo -->
+    <div class="imagen-fondo">
+        <!-- Contenido dentro de la imagen de fondo -->
+        <div class="contenido">
+            <h1>Bienvenido a CONALEP Ixtapaluca 236</h1>
+            <p>Aquí se verá información acerca del plantel</p>
+        </div>
+    </div>
+
+    <!-- Sección para la imagen extendida de tu empresa -->
+    <div class="imagen-empresa">
+        <img src="file:///C:/Users/alexz/OneDrive/Escritorio/mi-sitio-web/imagenes/laix.jpeg" alt="Imagen de mi empresa">
+    </div>
+
+</body>
+</html>
+
+
+
+
+
